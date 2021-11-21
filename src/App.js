@@ -24,7 +24,7 @@ function App() {
   },[cart])
 
   return (
-    <BrowserRouter>
+    <BrowserRouter  basename="/projects/shopping-app/">
     <Routes>
       <Route path="/" element={<Shop cart={cart} setCart={setCart}/>} />
       <Route path="/checkout" exact element={<Checkout cart={cart} setCart={setCart} />} />

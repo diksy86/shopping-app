@@ -62,7 +62,7 @@ const Checkout = ({ cart, setCart }) => {
 
     const onPay = () => {
         if(cart.total > balance) {
-            alert('Insufficient funds. Please remove some of items from your cart.');
+            alert('Insufficient funds. Please remove some of the items from your cart.');
             return;
         }
         setCart({...cart, items: {}, total: 0, itemCount: 0})
