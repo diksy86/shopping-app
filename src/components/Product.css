@@ -1,0 +1,10 @@
+.card-price {
+    float: right;
+    font-size: 22px;
+    display: block;
+    padding-top: 2px;
+}
+.card-title {
+    background: #f4a460ad;
+    text-shadow: 1px 1px 6px #a15e26;
+}

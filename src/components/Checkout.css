@@ -1,0 +1,17 @@
+table img {
+    max-width: 40px;
+    max-height: 40px;
+}
+td input[type="number"] {
+    max-width: 100px;
+}
+td button {
+    margin-left: 10px;
+}
+th.total {
+    text-align: right;
+}
+.checkout-buttons {
+    text-align: right;
+    padding: 30px 0;
+}
