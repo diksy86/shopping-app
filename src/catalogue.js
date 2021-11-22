@@ -55,5 +55,12 @@ const catalogue = [
         "img": process.env.PUBLIC_URL + '/images/Solar-Powered-LED-String-Fairy-Lights-Garden-Xmas.jpg',
         "price": 224.50
     },
+    {
+        "id": 9,
+        "name": "Christmas Tree",
+        "desc": "Christmas Tree With Glitter Branches Red Berries Pinecones",
+        "img": process.env.PUBLIC_URL + '/images/Christmas-Tree-with-Glitter-Branches-Red-Berries-Pinecones-by-Christopher-Knight-Home.jpg',
+        "price": 124.50
+    },
 ];
 export default catalogue;

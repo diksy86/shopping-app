@@ -13,7 +13,7 @@ const Product = ({product, cart, setCart}) => {
     setCart({...cart, items: items, itemCount: cart.itemCount + 1, total: cart.total + product.price})
   }
     return (
-    <div className="col s12 l6 xl3">
+    <div className="col s12 l6 xl4">
       <div className="card">
         <div className="card-image">
           <img src={product.img} alt=""/>
