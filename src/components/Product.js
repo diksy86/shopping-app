@@ -23,7 +23,7 @@ const Product = ({product, cart, setCart}) => {
           <p>{product.desc}</p>
         </div>
         <div className="card-action">
-            <button className="waves-effect waves-light btn" onClick={addToCart}><i className="material-icons left">add_shopping_cart</i>Add to Cart</button>
+            <button className="waves-effect waves-light btn" onClick={addToCart}><i className="material-icons left">add_shopping_cart</i>Buy</button>
             <span className="card-price">${product.price}</span>
         </div>
       </div>

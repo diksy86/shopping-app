@@ -5,6 +5,7 @@ import {useState, useEffect} from 'react';
 import Checkout from './components/Checkout';
 
 
+
 function App() {
   let localCart = window.localStorage.getItem("cart")
   localCart = JSON.parse(localCart)

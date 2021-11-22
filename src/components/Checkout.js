@@ -79,7 +79,7 @@ const Checkout = ({ cart, setCart }) => {
             : 
                 (items.length > 0 ? 
                 <div className="checkout-table">
-                    <table class="striped">
+                    <table className="striped">
                         <thead>
                         <tr>
                             <th colSpan='2'>Product</th>

@@ -2,7 +2,7 @@ const catalogue = [
     {
         "id": 1,
         "name": "Christmas Tree",
-        "desc": "Decorated Pine Cone and Glitter Artificial Tabletop Christmas Tree.",
+        "desc": "Decorated Pine Cone and Glitter Artificial Tabletop Christmas Tree",
         "img": process.env.PUBLIC_URL + '/images/Decorated-Pine-Cone-and-Glitter-Artificial-Tabletop-Christmas-Tree.jpg',
         "price": 135.99
     },
