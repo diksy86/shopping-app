@@ -1,6 +1,6 @@
 import { Header } from "./Header"
 import Footer from './Footer'
-import catalogue from "../catalogue";
+// import catalogue from "../catalogue";
 import './Checkout.css'
 import { useState } from 'react';
 import { Link } from "react-router-dom";
@@ -14,14 +14,14 @@ const Checkout = ({ cart, setCart }) => {
 
     var items = {...cart.items};
     for(const id in items) {
-        let product = false;
-        for(let i = 0; i < catalogue.length; i++) {
-            if(catalogue[i].id === parseInt(id)) {
-                product = catalogue[i];
+        let products = false;
+        for(let i = 0; i < products.length; i++) {
+            if(products[i].id === parseInt(id)) {
+                products = products[i];
                 break;
             }
         }
-        items[id] = {...items[id], id: product.id, name: product.name, img: product.img}
+        items[id] = {...items[id], id: products.id, name: products.name, img: products.img || "../../public/images/default.jpg"}
     }
     items = Object.values(items);
 
@@ -90,7 +90,9 @@ const Checkout = ({ cart, setCart }) => {
                         <tbody>
                             {items.map((item, index) => {
                                 return <tr key={index}>
-                                    <td><img src={item.img} alt="" /></td>
+                                    <td><img src={item.img} alt="" onError={event => { event.target.src = "../../public/images/default.jpg"
+                                            event.onerror = null
+                                         }} /></td>
                                     <td>{item.name}</td>
                                     <td>
                                         <input type="number" min="1" max="20" onChange={(event) => onQuantityChange(event, item)}  value={item.quantity} />

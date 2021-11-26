@@ -1,6 +1,5 @@
 {
   "name": "shopping-app",
-  "homepage": "https://dijana.pro/projects/shopping-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

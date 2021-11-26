@@ -24,6 +24,7 @@ export const Header = ({ cart }) => {
         <ul id="main-nav" className={navClass}>
           <li><Link to="/">Shop</Link></li>
           <li><Link to="/checkout">My Cart{cart.itemCount > 0 && <span className="badge new" data-badge-caption={cart.itemCount > 1 ? 'items' : 'item'}>{cart.itemCount}</span>}</Link></li>
+          <li><Link to="/add">Add New Product</Link></li>
         </ul>
       </div>
     </div>
